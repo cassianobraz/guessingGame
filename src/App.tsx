@@ -7,7 +7,7 @@ import { Tip } from './components/Tip';
 import { Letter } from './components/Letter';
 import { Input } from './components/Input';
 import { Button } from './components/Button';
-import { LettersUsed, LettersUsedProps } from './components/LettersUsed';
+import { LettersUsed, LettersUsedProps } from './components/LettersUsed/Index';
 
 export function App() {
   const [ score, setScore ] = useState(0)
