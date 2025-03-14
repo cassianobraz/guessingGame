@@ -1,3 +1,13 @@
+# Configuração básica do Netlify
 [build]
-  command = "pnpm install && pnpm run build"
-  functions = "functions"
+  # Diretório onde o build final será gerado (normalmente "build" para Create React App)
+  publish = "build"
+  
+  # Comando de build que será executado pelo Netlify
+  command = "npm run build"
+
+# Configurações específicas para redirecionamentos e rotas
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
