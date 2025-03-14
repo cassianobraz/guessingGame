@@ -20,7 +20,13 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    "noUncheckedSideEffectImports": true,
+
+    /* Adicionando baseUrl e paths */
+    "baseUrl": "./src", // Define a base para resolução de módulos
+    "paths": {
+      "@components/*": ["components/*"] // Facilita a importação de componentes
+    }
   },
   "include": ["src"]
 }
